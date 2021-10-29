@@ -1,0 +1,30 @@
+.footer-main{
+    background-color: #202F59;
+    /* color: #fff; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 50px 7%;
+    text-align: left;
+    justify-items: center;
+}
+.footer-about-us {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+.footer-about-us h2 {
+    margin: 0;
+    color: #fff;
+}
+.footer-about-us p {
+    margin-bottom: 7px;
+    color: #d4cfce;
+}
+.footer-about-us p:hover {
+    cursor: pointer;
+    color: #D5834E;
+}
+.subscribe-btn {
+    width: 100%;
+    background-color: #bd5819;
+}

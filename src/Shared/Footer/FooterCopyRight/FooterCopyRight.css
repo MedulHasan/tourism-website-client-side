@@ -1,0 +1,19 @@
+.footer-copy-right {
+    display: flex;
+    background-color: #1B2951;
+    color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 7%;
+
+}
+.cory-right-name {
+    color: #d4cfce;
+}
+.cory-right-name span {
+    color: #D5834E;
+}
+.footer-copy-option {
+    display: flex;
+    column-gap: 20px;
+}

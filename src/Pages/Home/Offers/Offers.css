@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Pacifico&display=swap');
+
+.offers-container {
+    padding: 0 5%;
+    padding-top: 50px;
+    padding-bottom: 200px;
+    /* border: 1px solid; */
+}
+.offer-text p {
+    font-family: 'Pacifico', cursive;
+    font-size: 24px;
+    color: #9E5D36;
+}
+.offer-text h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 46px;
+}
+.offer-card-container {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* justify-items: center; */
+}
+.offers-card {
+    text-align: left;
+}
+.offers-img-bg {
+    border-radius: 25px;
+    position: absolute;
+    height: 300px;
+    width: 400px;
+    /* opacity: 0.4; */
+}
+.offers-text {
+    position: relative;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    width: 75%;
+}
+.offer-btn {
+    width: 150px;
+}

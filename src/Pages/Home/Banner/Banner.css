@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Pacifico&display=swap');
+/* .banner-container {
+    overflow: hidden;
+    position: relative;
+} */
+.bg {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    height: 80vh;
+}
+.banner-text {
+    position: relative;
+    left: 20%;
+    height: 80vh;
+    width: 50%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.banner-text p {
+    font-family: 'Pacifico', cursive;
+    font-size: 24px;
+    color: #9E5D36;
+}
+.banner-text h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 66px;
+}
+.banner-1 {
+    width: 40%;
+}
+.banner-2 {
+    width: 60%;
+}

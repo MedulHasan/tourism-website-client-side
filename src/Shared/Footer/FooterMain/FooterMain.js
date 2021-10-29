@@ -12,7 +12,7 @@ const FooterMain = () => {
                 <img className="mb-2" width='100px' src="https://demo2.pavothemes.com/triply/wp-content/uploads/2020/11/logo-white.svg" alt="" />
                 <p>Nisi ut aliquip ex ea commodo consequatute irure dolor in reprehenderit in voluptatevelit esse cillum dolore eu fugiat nulla  excepteur pariatur.</p>
                 <div className="d-flex align-items-center">
-                    <GoLocation className="me-2" />
+                    <GoLocation className="me-2 text-white" />
                     <p>Malibag, Dhaka, 1217</p>
                 </div>
             </div>

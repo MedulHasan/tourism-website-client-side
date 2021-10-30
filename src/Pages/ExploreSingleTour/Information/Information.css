@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+.information-container {
+    width: 65%;
+    text-align: left;
+    font-family: 'Roboto Slab', serif;
+}
+.information-container p, ul {
+    color: #666666;
+}

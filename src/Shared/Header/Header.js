@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
+import { GoPrimitiveDot } from 'react-icons/go';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { HashLink } from 'react-router-hash-link';
 import useAuth from '../../hooks/useAuth';
@@ -16,15 +17,16 @@ const Header = () => {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ms-auto">
-                            <Nav.Link as={HashLink} to="/">Home</Nav.Link>
+                            <Nav.Link as={HashLink} to="/"><GoPrimitiveDot />HOME</Nav.Link>
                             {
                                 user.email ? (
                                     <>
-                                        <Nav.Link as={HashLink} to="/" onClick={logOut}>Logout</Nav.Link>
+                                        <Nav.Link as={HashLink} to={`/your-booking/${user.email}`}><GoPrimitiveDot />YOUR BOOKING</Nav.Link>
+                                        <Nav.Link as={HashLink} to="/" onClick={logOut}><GoPrimitiveDot />LOGOUT</Nav.Link>
                                         <Navbar.Text>Signed in as: <a>{user.email}</a></Navbar.Text>
                                     </>
                                 ) : (
-                                    <Nav.Link as={HashLink} to="/login">Login</Nav.Link>
+                                    <Nav.Link as={HashLink} to="/login"><GoPrimitiveDot />LOGIN</Nav.Link>
                                 )
                             }
                         </Nav>

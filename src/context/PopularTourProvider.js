@@ -1,25 +1,33 @@
 import React from 'react';
 import { useState } from 'react';
-import { useEffect } from 'react';
 import { createContext } from 'react';
 
 export const PopularTour = createContext();
 
 const PopularTourProvider = ({ children }) => {
 
-    const [popularTours, setPopularTours] = useState([]);
+    const [tour, setTour] = useState([]);
+    const [singleTour, setSingleTour] = useState({});
+    const [tourBooking, setTourBooking] = useState([]);
 
-    useEffect(() => {
-        fetch('http://localhost:8888/popular-tours')
-            .then(res => res.json())
-            .then(data => {
-                // console.log(data);
-                setPopularTours(data)
-            })
-    }, [])
+    const addTour = (item) => {
+        setTour(item)
+    };
+
+    const singleTout = (singleItem) => {
+        setSingleTour(singleItem)
+    };
+
+    const bookingTour = (bookData) => {
+
+    };
 
     const value = {
-        popularTours
+        tour,
+        addTour,
+        singleTout,
+        singleTour,
+        bookingTour
     };
 
     return (

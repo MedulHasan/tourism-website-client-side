@@ -1,6 +1,5 @@
 import React from 'react';
 import bn1 from '../../../image/banner/bn-1.jpg';
-import bn2 from '../../../image/banner/bn-2.jpg';
 
 import './Banner.css';
 

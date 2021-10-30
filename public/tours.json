@@ -7,12 +7,7 @@
         "duration": "5",
         "map_people": "50",
         "tour_type": "Beaches",
-        "images": {
-            "img1": "https://media.istockphoto.com/photos/aerial-view-of-philipsburg-st-maarten-dutch-west-indies-picture-id1262286801?b=1&k=20&m=1262286801&s=170667a&w=0&h=HfMHsXgz15h-IceggNB5g21RpOQJC5VChdPiJKcc8eg=",
-            "img2": "https://images.unsplash.com/photo-1534971032217-fdd43ca8e3ba?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8YmVhY2hlcyUyQyUyMGhpa2luZ3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
-            "img3": "https://images.unsplash.com/photo-1532254497630-c74966e79621?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGJlYWNoZXMlMkMlMjBoaWtpbmd8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
-            "img4": "https://images.unsplash.com/photo-1531168556467-80aace0d0144?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aWNlbGFuZHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-        }
+        "img": "https://media.istockphoto.com/photos/aerial-view-of-philipsburg-st-maarten-dutch-west-indies-picture-id1262286801?b=1&k=20&m=1262286801&s=170667a&w=0&h=HfMHsXgz15h-IceggNB5g21RpOQJC5VChdPiJKcc8eg="
     },
     {
         "id": "2",
@@ -22,71 +17,46 @@
         "duration": "4",
         "map_people": "50",
         "tour_type": "Beaches, Hiking",
-        "images": {
-            "img1": "https://images.unsplash.com/photo-1602082092471-1872cb2dfb63?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YmVhY2hlcyUyQyUyMGhpa2luZ3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
-            "img2": "https://images.unsplash.com/photo-1534971032217-fdd43ca8e3ba?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8YmVhY2hlcyUyQyUyMGhpa2luZ3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
-            "img3": "https://images.unsplash.com/photo-1532254497630-c74966e79621?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGJlYWNoZXMlMkMlMjBoaWtpbmd8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
-            "img4": "https://images.unsplash.com/photo-1531168556467-80aace0d0144?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aWNlbGFuZHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-        }
+        "img": "https://images.unsplash.com/photo-1602082092471-1872cb2dfb63?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YmVhY2hlcyUyQyUyMGhpa2luZ3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
     },
     {
         "id": "3",
-        "tour_place": "Caño Cristales River Trip",
-        "location": "Bryce Canyon National Park, USA",
+        "tour_place": "Bandarban",
+        "location": "Chittagong, BAN",
         "price": "130",
         "duration": "4",
         "map_people": "50",
-        "tour_type": "Beaches, Hiking",
-        "images": {
-            "img1": "https://images.unsplash.com/photo-1602082092471-1872cb2dfb63?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YmVhY2hlcyUyQyUyMGhpa2luZ3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
-            "img2": "https://images.unsplash.com/photo-1534971032217-fdd43ca8e3ba?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8YmVhY2hlcyUyQyUyMGhpa2luZ3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
-            "img3": "https://images.unsplash.com/photo-1532254497630-c74966e79621?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGJlYWNoZXMlMkMlMjBoaWtpbmd8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
-            "img4": "https://images.unsplash.com/photo-1531168556467-80aace0d0144?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aWNlbGFuZHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-        }
+        "tour_type": "Hill, Hiking",
+        "img": "https://images.unsplash.com/photo-1624485871361-65454b13edfa?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YmFuZGFyYmFufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
     },
     {
         "id": "4",
-        "tour_place": "Caño Cristales River Trip",
-        "location": "Bryce Canyon National Park, USA",
+        "tour_place": "Trekking in the Annapurna Region",
+        "location": "Annapurna Circuit, NEPAL",
         "price": "130",
         "duration": "4",
         "map_people": "50",
-        "tour_type": "Beaches, Hiking",
-        "images": {
-            "img1": "https://images.unsplash.com/photo-1602082092471-1872cb2dfb63?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YmVhY2hlcyUyQyUyMGhpa2luZ3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
-            "img2": "https://images.unsplash.com/photo-1534971032217-fdd43ca8e3ba?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8YmVhY2hlcyUyQyUyMGhpa2luZ3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
-            "img3": "https://images.unsplash.com/photo-1532254497630-c74966e79621?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGJlYWNoZXMlMkMlMjBoaWtpbmd8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
-            "img4": "https://images.unsplash.com/photo-1531168556467-80aace0d0144?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aWNlbGFuZHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-        }
+        "tour_type": "Mountain, Hiking",
+        "img": "https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bmVwYWwlMjBtb3VudGFpbnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
     },
     {
         "id": "5",
-        "tour_place": "Caño Cristales River Trip",
-        "location": "Bryce Canyon National Park, USA",
+        "tour_place": "Swiss Alps",
+        "location": "Mountains of the Alps, SWISS",
         "price": "130",
         "duration": "4",
         "map_people": "50",
-        "tour_type": "Beaches, Hiking",
-        "images": {
-            "img1": "https://images.unsplash.com/photo-1602082092471-1872cb2dfb63?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YmVhY2hlcyUyQyUyMGhpa2luZ3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
-            "img2": "https://images.unsplash.com/photo-1534971032217-fdd43ca8e3ba?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8YmVhY2hlcyUyQyUyMGhpa2luZ3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
-            "img3": "https://images.unsplash.com/photo-1532254497630-c74966e79621?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGJlYWNoZXMlMkMlMjBoaWtpbmd8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
-            "img4": "https://images.unsplash.com/photo-1531168556467-80aace0d0144?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aWNlbGFuZHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-        }
+        "tour_type": "Mountains, Hiking",
+        "img": "https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c3dpdHplcmxhbmR8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
     },
     {
         "id": "6",
-        "tour_place": "Caño Cristales River Trip",
-        "location": "Bryce Canyon National Park, USA",
+        "tour_place": "Eiffel Tower",
+        "location": "Paris, FRANCE",
         "price": "130",
         "duration": "4",
         "map_people": "50",
-        "tour_type": "Beaches, Hiking",
-        "images": {
-            "img1": "https://images.unsplash.com/photo-1602082092471-1872cb2dfb63?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YmVhY2hlcyUyQyUyMGhpa2luZ3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
-            "img2": "https://images.unsplash.com/photo-1534971032217-fdd43ca8e3ba?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8YmVhY2hlcyUyQyUyMGhpa2luZ3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
-            "img3": "https://images.unsplash.com/photo-1532254497630-c74966e79621?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGJlYWNoZXMlMkMlMjBoaWtpbmd8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
-            "img4": "https://images.unsplash.com/photo-1531168556467-80aace0d0144?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aWNlbGFuZHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-        }
+        "tour_type": "Hiking",
+        "img": "https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cGFyaXN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
     }
 ]

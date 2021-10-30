@@ -1,0 +1,12 @@
+.booking-container {
+    width: 35%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 3%;
+    border-radius: 3%;
+    height: 80%;
+}
+.book-now-btn {
+    background-color: #DC834E !important;
+    border: none !important;
+    height: 50px;
+}

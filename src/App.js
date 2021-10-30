@@ -7,6 +7,9 @@ import Login from './Pages/Login/Login';
 import Footer from './Shared/Footer/Footer';
 import Header from './Shared/Header/Header';
 import Register from './Pages//Register/Register'
+import PrivateRoute from './Router/PrivateRoute';
+import ExploreTour from './Pages/ExploreSingleTour/ExploreTour';
+import YourBooking from './Pages/YourBooking/YourBooking';
 
 function App() {
   return (
@@ -25,6 +28,12 @@ function App() {
               <Route exact path="/register">
                 <Register />
               </Route>
+              <PrivateRoute path="/explore-tour/:id">
+                <ExploreTour />
+              </PrivateRoute>
+              <PrivateRoute path="/your-booking/:email">
+                <YourBooking />
+              </PrivateRoute>
             </Switch>
             <Footer />
           </BrowserRouter>

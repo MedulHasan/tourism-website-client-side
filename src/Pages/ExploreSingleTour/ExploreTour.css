@@ -1,0 +1,5 @@
+.info-book {
+    display: flex;
+    padding: 50px 7%;
+    column-gap: 5%;
+}

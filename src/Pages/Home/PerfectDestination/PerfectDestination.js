@@ -1,6 +1,5 @@
 import React from 'react';
 import './PerfectDestination.css';
-import perfect from '../../../image/banner/OJO4YQ0.jpg'
 import ReactCarosel from '../ReactCarosel/ReactCarosel';
 
 const PerfectDestination = () => {

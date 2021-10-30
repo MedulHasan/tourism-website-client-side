@@ -1,9 +1,11 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { HashLink } from 'react-router-hash-link';
-// import brand from '../../image/19502-ai-removebg-preview.png';
+import useAuth from '../../hooks/useAuth';
 
 const Header = () => {
+    const { user, logOut } = useAuth();
     return (
         <div>
             <Navbar bg="light" expand="lg">
@@ -13,9 +15,18 @@ const Header = () => {
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
-                        <Nav className="me-auto">
+                        <Nav className="ms-auto">
                             <Nav.Link as={HashLink} to="/">Home</Nav.Link>
-                            <Nav.Link href="#link">Login</Nav.Link>
+                            {
+                                user.email ? (
+                                    <>
+                                        <Nav.Link as={HashLink} to="/" onClick={logOut}>Logout</Nav.Link>
+                                        <Navbar.Text>Signed in as: <a>{user.email}</a></Navbar.Text>
+                                    </>
+                                ) : (
+                                    <Nav.Link as={HashLink} to="/login">Login</Nav.Link>
+                                )
+                            }
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

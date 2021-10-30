@@ -1,14 +1,14 @@
 [
     {
         "id": "1",
-        "tour_place": "Caño Cristales River Trip",
-        "location": "Bryce Canyon National Park, USA",
-        "price": "130",
-        "duration": "4",
+        "tour_place": "saint martin",
+        "location": "Cox's Bazar-Teknaf, BAN",
+        "price": "100",
+        "duration": "5",
         "map_people": "50",
-        "tour_type": "Beaches, Hiking",
+        "tour_type": "Beaches",
         "images": {
-            "img1": "https://images.unsplash.com/photo-1602082092471-1872cb2dfb63?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YmVhY2hlcyUyQyUyMGhpa2luZ3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+            "img1": "https://media.istockphoto.com/photos/aerial-view-of-philipsburg-st-maarten-dutch-west-indies-picture-id1262286801?b=1&k=20&m=1262286801&s=170667a&w=0&h=HfMHsXgz15h-IceggNB5g21RpOQJC5VChdPiJKcc8eg=",
             "img2": "https://images.unsplash.com/photo-1534971032217-fdd43ca8e3ba?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8YmVhY2hlcyUyQyUyMGhpa2luZ3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
             "img3": "https://images.unsplash.com/photo-1532254497630-c74966e79621?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGJlYWNoZXMlMkMlMjBoaWtpbmd8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
             "img4": "https://images.unsplash.com/photo-1531168556467-80aace0d0144?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aWNlbGFuZHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"

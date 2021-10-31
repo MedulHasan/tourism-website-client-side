@@ -4,12 +4,42 @@
     background-color: #212529;
     width: 25%;
     height: 100vh;
-    /* position: fixed; */
     position: -webkit-sticky;
     position: sticky;
     top: 50px;
 }
 .navBar-item {
-    /* color: #fff !important; */
     font-size: 20px;
+}
+
+@media only screen and (min-width : 1180px) {
+    .side-bar-container {
+        width: 38%;
+    }
+}
+@media only screen and (min-width : 769px) and (max-width: 1179px) {
+    .side-bar-container {
+        width: 35%;
+    }
+    .navBar-item {
+        font-size: 16px;
+    }
+}
+@media only screen and (min-width : 481px) and (max-width: 768px) {
+    .side-bar-container {
+        width: 30%;
+        padding: 2% 0;
+    }
+    .navBar-item {
+        font-size: 12px;
+    }
+}
+@media only screen and (min-width : 0px) and (max-width: 480px) {
+    .side-bar-container {
+        width: 30%;
+        padding: 2% 0;
+    }
+    .navBar-item {
+        font-size: 12px;
+    }
 }

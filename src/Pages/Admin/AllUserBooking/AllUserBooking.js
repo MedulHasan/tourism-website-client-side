@@ -50,6 +50,9 @@ const AllUserBooking = () => {
             .then(res => res.json())
             .then(data => {
                 swal("Approved Successfully", "", "success");
+                fetch(`https://triply-medul.herokuapp.com/tour-booking`)
+                    .then(res => res.json())
+                    .then(order => setMyBooking(order))
             })
     };
     if (myBooking.length === 0) {
@@ -57,7 +60,7 @@ const AllUserBooking = () => {
     }
     return (
         <div className="your-booking-container all-user-booking">
-            <h3>All Users Billing Document - {myBooking.length}</h3>
+            <h3 className="all-billing-count">All Users Billing Document - {myBooking.length}</h3>
             {
                 myBooking.map(booking =>
                     <div key={booking._id} className="single-billing-all">

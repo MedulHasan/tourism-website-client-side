@@ -17,6 +17,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px;
+    justify-items: center;
 }
 .single-tour img {
     width: 410px;
@@ -39,4 +40,68 @@
 }
 .explore-btn {
     height: 40px;
+}
+
+@media only screen and (min-width : 1180px) {
+    .popular-tour {
+        padding: 5% 5%;
+        background-color: #F9F4F0;
+    }
+    .popular-tour-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .single-tour img {
+        width: 320px;
+    }
+    .single-tour {
+        width: 320px;
+    }
+}
+@media only screen and (min-width : 769px) and (max-width: 1179px) {
+    .popular-tour {
+        padding: 5% 5%;
+        background-color: #F9F4F0;
+    }
+    .popular-tour-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .single-tour img {
+        width: 320px;
+    }
+    .single-tour {
+        width: 320px;
+    }
+}
+@media only screen and (min-width : 481px) and (max-width: 768px) {
+    .popular-tour {
+        padding: 5% 5%;
+        background-color: #F9F4F0;
+    }
+    .popular-tour-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .single-tour img {
+        width: 380px;
+    }
+    .single-tour {
+        width: 380px;
+    }
+}
+@media only screen and (min-width : 0px) and (max-width: 480px) {
+    .popular-tour {
+        padding: 2% 2%;
+    }
+    .popular-tour-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .single-tour img {
+        width: 320px;
+    }
+    .single-tour {
+        width: 320px;
+    }
 }

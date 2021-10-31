@@ -3,3 +3,19 @@
     padding: 50px 7%;
     column-gap: 5%;
 }
+@media only screen and (min-width : 481px) and (max-width: 768px) {
+    .info-book {
+        display: flex;
+        flex-direction: column;
+        padding: 50px 7%;
+        column-gap: 5%;
+    }
+}
+@media only screen and (min-width : 0px) and (max-width: 480px) {
+    .info-book {
+        display: flex;
+        flex-direction: column;
+        padding: 50px 3%;
+        column-gap: 5%;
+    }
+}

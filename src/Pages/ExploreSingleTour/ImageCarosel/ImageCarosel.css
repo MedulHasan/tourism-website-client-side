@@ -31,3 +31,17 @@
     color: #DC834E;
     font-weight: bold;
 }
+@media only screen and (min-width : 481px) and (max-width: 768px) {
+    .info-item-cont {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+    }
+}
+@media only screen and (min-width : 0px) and (max-width: 480px) {
+    .info-item-cont {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+    }
+}

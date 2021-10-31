@@ -10,3 +10,24 @@
     border: none !important;
     height: 50px;
 }
+
+@media only screen and (min-width : 1180px) {
+    .booking-container {
+        width: 50%;
+    }
+}
+@media only screen and (min-width : 769px) and (max-width: 1179px) {
+    .booking-container {
+        width: 45%;
+    }
+}
+@media only screen and (min-width : 481px) and (max-width: 768px) {
+    .booking-container {
+        width: 100%;
+    }
+}
+@media only screen and (min-width : 0px) and (max-width: 480px) {
+    .booking-container {
+        width: 100%;
+    }
+}

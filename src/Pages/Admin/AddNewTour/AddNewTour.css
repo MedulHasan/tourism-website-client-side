@@ -7,3 +7,24 @@
     width: 60%;
     margin: auto;
 }
+
+@media only screen and (min-width : 1180px) {
+    .new-tour-form {
+        width: 80%;
+    }
+}
+@media only screen and (min-width : 769px) and (max-width: 1179px) {
+    .new-tour-form {
+        width: 80%;
+    }
+}
+@media only screen and (min-width : 481px) and (max-width: 768px) {
+    .new-tour-form {
+        width: 90%;
+    }
+}
+@media only screen and (min-width : 0px) and (max-width: 480px) {
+    .new-tour-form {
+        width: 90%;
+    }
+}

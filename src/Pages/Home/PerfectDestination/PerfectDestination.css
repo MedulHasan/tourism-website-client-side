@@ -19,20 +19,75 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 60px;
 }
-/* .perfect-destination-bg {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 50vh;
-    text-align: left;
-}
-.perfect-destination-text {
-    position: relative;
-    left: 0;
-    top: 0;
-} */
 .carosel{
-    /* border: 1px solid;
-    color: black; */
     width: 70%;
+}
+
+@media only screen and (min-width : 1180px) {
+    .perfect-destination-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .perfect-destination {
+        width: 80%;
+        padding: 0 20px;
+    }
+    .carosel{
+        width: 90%;
+        margin-top: 20px;
+    }
+}
+@media only screen and (min-width : 769px) and (max-width: 1179px) {
+    .perfect-destination-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .perfect-destination {
+        width: 80%;
+        padding: 0 20px;
+    }
+    .carosel{
+        width: 90%;
+        margin-top: 20px;
+    }
+}
+@media only screen and (min-width : 481px) and (max-width: 768px) {
+    .perfect-destination-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .perfect-destination h1 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 40px;
+    }
+    .perfect-destination {
+        width: 80%;
+        padding: 0 20px;
+    }
+    .carosel{
+        width: 90%;
+        margin-top: 20px;
+    }
+}
+@media only screen and (min-width : 0px) and (max-width: 480px) {
+    .perfect-destination-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .perfect-destination h1 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 40px;
+    }
+    .perfect-destination {
+        width: 100%;
+        padding: 0 0;
+    }
+    .carosel{
+        width: 100%;
+        margin-top: 20px;
+    }
 }

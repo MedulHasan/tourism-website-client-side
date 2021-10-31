@@ -24,3 +24,20 @@
     color: #fff;
     border-radius: 5px;
 }
+
+@media only screen and (min-width : 769px) and (max-width: 1179px) {
+    .single-billing {
+        width: 70%;
+    }
+}
+@media only screen and (min-width : 481px) and (max-width: 768px) {
+    .single-billing {
+        width: 100%;
+    }
+}
+@media only screen and (min-width : 0px) and (max-width: 480px) {
+    .single-billing {
+        width: 100%;
+        font-size: 12px;
+    }
+}

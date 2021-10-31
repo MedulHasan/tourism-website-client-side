@@ -26,7 +26,7 @@ const Information = () => {
             </div>
             <div className="mb-5">
                 <h1 className="mb-3">Included/Excluded</h1>
-                <div className="d-flex justify-content-between me-5 pe-5">
+                <div className="d-flex justify-content-between me-lg-5 pe-lg-5">
                     <div>
                         <p><BiCheckCircle color="green" /> Specialized bilingual guide</p>
                         <p><BiCheckCircle color="green" /> Private Transport</p>

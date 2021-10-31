@@ -3,3 +3,39 @@
     height: 320px;
     border-radius: 15px;
 }
+.caresel-cont {
+    width: 300px;
+    height: 320px;
+    border-radius: 15px;
+}
+
+@media only screen and (min-width : 769px) and (max-width: 1179px) {
+    .carosel-img {
+        width: 180px;
+        height: 250px;
+        border-radius: 15px;
+    }
+    .kKtIgc, .ckcCYa, .kdmaJp {
+        width: 180px !important;
+    }
+}
+@media only screen and (min-width : 481px) and (max-width: 768px) {
+    .carosel-img {
+        width: 100px;
+        height: 200px;
+        border-radius: 15px;
+    }
+    .kKtIgc, .ckcCYa, .kdmaJp {
+        width: 100px !important;
+    }
+}
+@media only screen and (min-width : 0px) and (max-width: 480px) {
+    .carosel-img {
+        width: 80px;
+        height: 150px;
+        border-radius: 15px;
+    }
+    .kKtIgc, .ckcCYa, .kdmaJp {
+        width: 80px !important;
+    }
+}

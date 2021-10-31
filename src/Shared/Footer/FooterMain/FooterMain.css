@@ -28,3 +28,22 @@
     width: 100%;
     background-color: #bd5819;
 }
+
+@media only screen and (min-width : 769px) and (max-width: 1179px) {
+    .footer-main{
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 50px;
+    }
+}
+@media only screen and (min-width : 481px) and (max-width: 768px) {
+    .footer-main{
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 50px;
+    }
+}
+@media only screen and (min-width : 0px) and (max-width: 480px) {
+    .footer-main{
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 50px;
+    }
+}

@@ -24,3 +24,18 @@
     height: 40px;
     font-size: 44px !important;
 }
+@media only screen and (min-width : 769px) and (max-width: 1179px) {
+    .login-container .login-form {
+        width: 45%;
+    }
+}
+@media only screen and (min-width : 481px) and (max-width: 768px) {
+    .login-container .login-form {
+        width: 85%;
+    }
+}
+@media only screen and (min-width : 0px) and (max-width: 480px) {
+    .login-container .login-form {
+        width: 85%;
+    }
+}

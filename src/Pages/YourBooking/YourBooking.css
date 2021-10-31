@@ -4,11 +4,23 @@
 .single-billing {
     width: 50%;
     margin: 0 auto;
-    margin-bottom: 100px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-bottom: 50px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 0px 8px;
     padding: 30px 50px;
     text-align: left;
 }
 .delete-place-btn {
     text-align: right;
+}
+.pending {
+    background-color: crimson;
+    padding: 5px 10px;
+    color: #fff;
+    border-radius: 5px;
+}
+.approved {
+    background-color: rgb(20, 223, 20);
+    padding: 5px 10px;
+    color: #fff;
+    border-radius: 5px;
 }

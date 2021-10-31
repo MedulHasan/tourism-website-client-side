@@ -1,0 +1,12 @@
+.side-bar-container {
+    text-align: left;
+    padding: 2%;
+    background-color: #212529;
+    width: 20%;
+    height: 100vh;
+    position: fixed;
+}
+.navBar-item {
+    /* color: #fff !important; */
+    font-size: 20px;
+}

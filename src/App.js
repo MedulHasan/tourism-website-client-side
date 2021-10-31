@@ -10,6 +10,8 @@ import Register from './Pages//Register/Register'
 import PrivateRoute from './Router/PrivateRoute';
 import ExploreTour from './Pages/ExploreSingleTour/ExploreTour';
 import YourBooking from './Pages/YourBooking/YourBooking';
+import Admin from './Pages/Admin/Admin';
+import ScrollToTop from './Pages/util/ScroppToTop';
 
 function App() {
   return (
@@ -17,6 +19,7 @@ function App() {
       <AuthProvider>
         <PopularTourProvider>
           <BrowserRouter>
+            <ScrollToTop />
             <Header />
             <Switch>
               <Route exact path="/">
@@ -33,6 +36,12 @@ function App() {
               </PrivateRoute>
               <PrivateRoute path="/your-booking/:email">
                 <YourBooking />
+              </PrivateRoute>
+              <PrivateRoute path="/admin/all-user-booking">
+                <Admin />
+              </PrivateRoute>
+              <PrivateRoute path="/admin/add-new-tour">
+                <Admin />
               </PrivateRoute>
             </Switch>
             <Footer />

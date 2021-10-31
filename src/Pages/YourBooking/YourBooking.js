@@ -40,79 +40,86 @@ const YourBooking = () => {
             });
     }
 
-    // if (!myBooking) {
-    //     return <Spinner animation="border" variant="danger" />
-    // }
+    if (myBooking.length === 0) {
+        return <Spinner animation="border" variant="danger" />
+    }
     return (
         <div className="your-booking-container">
-            <ToastContainer />
             {
-                myBooking.map(booking =>
-                    <div key={booking._id} className="single-billing">
-                        <h3>Your Billing</h3>
-                        <table className="table table-bordered table-container">
-                            <tbody>
-                                <tr>
-                                    <td>Your Name</td>
-                                    <td>{booking.name}</td>
-                                </tr>
-                                <tr>
-                                    <td>Your Email</td>
-                                    <td>{booking.email}</td>
-                                </tr>
-                                <tr>
-                                    <td>Tour Spot</td>
-                                    <td>{booking.tourName}</td>
-                                </tr>
-                                <tr>
-                                    <td>Tour Duration</td>
-                                    <td>{booking.tourDuration || 0} days</td>
-                                </tr>
-                                <tr>
-                                    <td>Date</td>
-                                    <td>{booking.date}</td>
-                                </tr>
-                                <tr>
-                                    <td>Pickup Time</td>
-                                    <td>{booking.time}</td>
-                                </tr>
-                                <tr>
-                                    <td>Pickup Location</td>
-                                    <td>{booking.address}</td>
-                                </tr>
-                                <tr>
-                                    <td>Tour Price/person</td>
-                                    <td>${booking.tourPerPerson}</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        Tickets
-                                        <ul className="tickets">
-                                            <li>Adult - {booking.tickets.adult} person</li>
-                                            <li>Young - {booking.tickets.young} person</li>
-                                        </ul>
-                                    </td>
-                                    <td>
-                                        <br />
-                                        <ul>
-                                            <li>${booking.tickets.adult * 100}</li>
-                                            <li>${booking.tickets.young * 80}</li>
-                                        </ul>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Total Price</td>
-                                    <td>${parseInt(booking.tourPerPerson) + (parseInt(booking.tickets.adult) * 100) + (parseInt(booking.tickets.young) * 80)}</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <div className="delete-place-btn">
-                            <Button onClick={() => handleDeleteOrder(booking._id)} variant="outline-danger">Delete Order</Button>{' '}
-                            <Button variant="outline-primary">Place Order</Button>{' '}
+                myBooking.length <= 0 ? (
+                    <h2>Your Booking List is Empty</h2>
+                ) : (
+                    myBooking.map(booking =>
+                        <div key={booking._id} className="single-billing">
+                            <div className="d-flex justify-content-between">
+                                <h3>Your Billing</h3>
+                                <p className={booking.status === 'approved' ? 'approved' : 'pending'}>{booking.status}</p>
+                            </div>
+                            <table className="table table-bordered table-container">
+                                <tbody>
+                                    <tr>
+                                        <td>Your Name</td>
+                                        <td>{booking.name}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Your Email</td>
+                                        <td>{booking.email}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tour Spot</td>
+                                        <td>{booking.tourName}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tour Duration</td>
+                                        <td>{booking.tourDuration || 0} days</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Date</td>
+                                        <td>{booking.date}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pickup Time</td>
+                                        <td>{booking.time}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pickup Location</td>
+                                        <td>{booking.address}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tour Price/person</td>
+                                        <td>${booking.tourPerPerson}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Tickets
+                                            <ul className="tickets">
+                                                <li>Adult - {booking.tickets.adult} person</li>
+                                                <li>Young - {booking.tickets.young} person</li>
+                                            </ul>
+                                        </td>
+                                        <td>
+                                            <br />
+                                            <ul>
+                                                <li>${booking.tickets.adult * 100}</li>
+                                                <li>${booking.tickets.young * 80}</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Total Price</td>
+                                        <td>${(parseInt(booking.tourPerPerson) * (parseInt(booking.tickets.adult) + parseInt(booking.tickets.young))) + (parseInt(booking.tickets.adult) * 100) + (parseInt(booking.tickets.young) * 80)}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div className="delete-place-btn">
+                                <Button onClick={() => handleDeleteOrder(booking._id)} variant="outline-danger">Delete Order</Button>{' '}
+                                <Button variant="outline-primary">Place Order</Button>{' '}
+                            </div>
                         </div>
-                    </div>
+                    )
                 )
             }
+            <ToastContainer />
         </div>
     );
 };

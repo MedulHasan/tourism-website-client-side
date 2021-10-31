@@ -42,7 +42,8 @@ const BookingCard = () => {
             },
             address: addressRef.current.value,
             tourPerPerson: tour.price,
-            tourDuration: tour.duration
+            tourDuration: tour.duration,
+            status: 'pending...'
         };
 
         const url = `http://localhost:8888/tour-booking`;
@@ -57,8 +58,8 @@ const BookingCard = () => {
             .then(data => {
                 history.push(`/your-booking/${emailRef.current.value}`);
             })
+        notify();
 
-        notify()
     }
     return (
         <div className="booking-container">

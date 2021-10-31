@@ -13,7 +13,7 @@ const ExploreTour = () => {
     const { singleTout } = usePopularTour();
 
     useEffect(() => {
-        fetch(`http://localhost:8888/popular-tours/${id}`)
+        fetch(`https://triply-medul.herokuapp.com/popular-tours/${id}`)
             .then(res => res.json())
             .then(data => singleTout(data))
     }, []);

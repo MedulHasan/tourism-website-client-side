@@ -12,7 +12,7 @@ const PopularTours = () => {
     const { addTour } = usePopularTour();
 
     useEffect(() => {
-        fetch('http://localhost:8888/popular-tours')
+        fetch('https://triply-medul.herokuapp.com/popular-tours')
             .then(res => res.json())
             .then(data => setPopularTours(data))
     }, []);

@@ -22,7 +22,7 @@ const Header = () => {
                             {
                                 user.email ? (
                                     <>
-                                        <Nav.Link as={HashLink} to={`/your-booking/${user.email}`}><GoPrimitiveDot />YOUR BOOKING</Nav.Link>
+                                        <Nav.Link as={HashLink} to={`/your-booking/${user.email}`}><GoPrimitiveDot />MY BOOKING</Nav.Link>
                                         <Nav.Link as={HashLink} to="/admin/all-user-booking"><GoPrimitiveDot />ADMIN</Nav.Link>
                                         <Nav.Link as={HashLink} to="/" onClick={logOut}><GoPrimitiveDot />LOGOUT</Nav.Link>
                                         <Navbar.Text>Signed in as: <a>{user.email}</a></Navbar.Text>

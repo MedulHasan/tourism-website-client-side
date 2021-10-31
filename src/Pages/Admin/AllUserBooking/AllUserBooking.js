@@ -9,7 +9,7 @@ const AllUserBooking = () => {
     const [myBooking, setMyBooking] = useState([]);
 
     useEffect(() => {
-        fetch(`http://localhost:8888/tour-booking`)
+        fetch(`https://triply-medul.herokuapp.com/tour-booking`)
             .then(res => res.json())
             .then(order => setMyBooking(order))
     }, []);
@@ -26,7 +26,7 @@ const AllUserBooking = () => {
             .then((willDelete) => {
                 if (willDelete) {
                     setMyBooking(remainingOrder);
-                    fetch(`http://localhost:8888/tour-booking/${id}`, {
+                    fetch(`https://triply-medul.herokuapp.com/tour-booking/${id}`, {
                         method: 'DELETE'
                     })
                     swal("Poof! Your document has been deleted!", {
@@ -40,7 +40,7 @@ const AllUserBooking = () => {
 
     const handleApprovedOrder = (id) => {
         const updateData = { status: 'approved' };
-        fetch(`http://localhost:8888/tour-booking/${user.email}/${id}`, {
+        fetch(`https://triply-medul.herokuapp.com/tour-booking/${user.email}/${id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

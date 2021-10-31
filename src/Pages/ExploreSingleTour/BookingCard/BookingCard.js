@@ -46,7 +46,7 @@ const BookingCard = () => {
             status: 'pending...'
         };
 
-        const url = `http://localhost:8888/tour-booking`;
+        const url = `https://triply-medul.herokuapp.com/tour-booking`;
         fetch(url, {
             method: 'POST',
             headers: {

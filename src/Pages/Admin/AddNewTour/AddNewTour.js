@@ -28,7 +28,7 @@ const AddNewTour = () => {
             map_people: maxPeopleRef.current.value,
             img: imageUrlRef.current.value
         };
-        fetch(`http://localhost:8888/add-new-tour`, {
+        fetch(`https://triply-medul.herokuapp.com/add-new-tour`, {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

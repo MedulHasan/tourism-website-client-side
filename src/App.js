@@ -12,6 +12,8 @@ import ExploreTour from './Pages/ExploreSingleTour/ExploreTour';
 import YourBooking from './Pages/YourBooking/YourBooking';
 import Admin from './Pages/Admin/Admin';
 import ScrollToTop from './Pages/util/ScroppToTop';
+import NotFound404 from './Pages/NotFound/NotFound';
+import OrderDone from './Pages/OrderDone/OrderDone';
 
 function App() {
   return (
@@ -31,18 +33,24 @@ function App() {
               <Route exact path="/register">
                 <Register />
               </Route>
-              <PrivateRoute path="/explore-tour/:id">
+              <PrivateRoute exact path="/explore-tour/:id">
                 <ExploreTour />
               </PrivateRoute>
-              <PrivateRoute path="/your-booking/:email">
+              <PrivateRoute exact path="/your-booking/:email">
                 <YourBooking />
               </PrivateRoute>
-              <PrivateRoute path="/admin/all-user-booking">
+              <PrivateRoute exact path="/admin/all-user-booking">
                 <Admin />
               </PrivateRoute>
-              <PrivateRoute path="/admin/add-new-tour">
+              <PrivateRoute exact path="/admin/add-new-tour">
                 <Admin />
               </PrivateRoute>
+              <PrivateRoute exact path="/order-complete">
+                <OrderDone />
+              </PrivateRoute>
+              <Route path="*">
+                <NotFound404 />
+              </Route>
             </Switch>
             <Footer />
           </BrowserRouter>

@@ -11,15 +11,17 @@ const Admin = () => {
         <div className="admin-container">
             <BrowserRouter>
                 <ScrollToTop />
-                <SideBar />
-                <Switch>
-                    <Route path="/admin/all-user-booking">
-                        <AllUserBooking />
-                    </Route>
-                    <Route path="/admin/add-new-tour">
-                        <AddNewTour />
-                    </Route>
-                </Switch>
+                <div className="d-flex">
+                    <SideBar />
+                    <Switch>
+                        <Route path="/admin/all-user-booking">
+                            <AllUserBooking />
+                        </Route>
+                        <Route path="/admin/add-new-tour">
+                            <AddNewTour />
+                        </Route>
+                    </Switch>
+                </div>
             </BrowserRouter>
         </div>
     );

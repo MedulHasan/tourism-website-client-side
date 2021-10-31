@@ -17,7 +17,7 @@ const Header = () => {
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
-                        <Nav className="ms-auto">
+                        <Nav className="me-auto">
                             <Nav.Link as={HashLink} to="/"><GoPrimitiveDot />HOME</Nav.Link>
                             {
                                 user.email ? (
@@ -25,13 +25,19 @@ const Header = () => {
                                         <Nav.Link as={HashLink} to={`/your-booking/${user.email}`}><GoPrimitiveDot />MY BOOKING</Nav.Link>
                                         <Nav.Link as={HashLink} to="/admin/all-user-booking"><GoPrimitiveDot />ADMIN</Nav.Link>
                                         <Nav.Link as={HashLink} to="/" onClick={logOut}><GoPrimitiveDot />LOGOUT</Nav.Link>
-                                        <Navbar.Text>Signed in as: <a>{user.email}</a></Navbar.Text>
                                     </>
                                 ) : (
                                     <Nav.Link as={HashLink} to="/login"><GoPrimitiveDot />LOGIN</Nav.Link>
                                 )
                             }
                         </Nav>
+                        <div>
+                            {
+                                user.email ? (
+                                    <Navbar.Text>Signed in as: <a>{user.email}</a></Navbar.Text>
+                                ) : ''
+                            }
+                        </div>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>

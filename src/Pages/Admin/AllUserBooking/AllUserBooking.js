@@ -53,14 +53,14 @@ const AllUserBooking = () => {
             })
     };
     if (myBooking.length === 0) {
-        return <Spinner animation="border" variant="danger" />
+        // return <Spinner className="mx-auto mt-5 spinner-a" animation="border" variant="danger" />
     }
     return (
         <div className="your-booking-container all-user-booking">
             <h3>All Users Billing Document</h3>
             {
                 myBooking.map(booking =>
-                    <div key={booking._id} className="single-billing">
+                    <div key={booking._id} className="single-billing-all">
                         <h3><span className="billing-name">{booking.name}</span> Billing</h3>
                         <table className="table table-bordered table-container">
                             <tbody>

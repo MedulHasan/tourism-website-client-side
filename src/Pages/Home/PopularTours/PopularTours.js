@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { BsArrowRight } from 'react-icons/bs'
-import { Button } from 'react-bootstrap';
+import { Button, Spinner } from 'react-bootstrap';
 import usePopularTour from '../../../hooks/usePopularTour';
 import './PopularTours.css';
 import { useHistory } from 'react-router';
@@ -24,6 +24,9 @@ const PopularTours = () => {
         })
     }
 
+    if (popularTours.length === 0) {
+        return <Spinner className="mx-auto mt-5 spinner-a" animation="border" variant="danger" />
+    }
     return (
         <div className="popular-tour">
             <div className="popular-tour-heading">

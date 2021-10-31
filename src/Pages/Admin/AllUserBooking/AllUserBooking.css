@@ -5,3 +5,16 @@
 .billing-name {
     color: brown;
 }
+.single-billing-all {
+    width: 75%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 0px 8px;
+    padding: 30px 50px;
+    text-align: left;
+}
+.spinner-a {
+    padding: 0;
+    /* width: 2% !important; */
+    margin: 0;
+}

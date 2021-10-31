@@ -5,8 +5,10 @@ import swal from 'sweetalert';
 import { Button, Spinner } from 'react-bootstrap';
 import useAuth from '../../hooks/useAuth';
 import './YourBooking.css';
+import { useHistory } from 'react-router';
 
 const YourBooking = () => {
+    const history = useHistory();
     const { user } = useAuth();
     const [myBooking, setMyBooking] = useState([]);
 
@@ -38,6 +40,18 @@ const YourBooking = () => {
                     swal("Your document is safe!");
                 }
             });
+    };
+    const handelPlaceOrder = (id) => {
+        const remainingOrder = myBooking.filter(item => item._id !== id);
+        fetch(`https://triply-medul.herokuapp.com/tour-booking/${user.email}/${id}`, {
+            method: 'DELETE'
+        })
+            .then(res => res.json())
+            .then(data => {
+                swal("Good job!", "Your Booking Successfully Done!", "success");
+                setMyBooking(remainingOrder);
+                history.push('/order-complete');
+            })
     }
 
     if (myBooking.length === 0) {
@@ -113,7 +127,7 @@ const YourBooking = () => {
                             </table>
                             <div className="delete-place-btn">
                                 <Button onClick={() => handleDeleteOrder(booking._id)} variant="outline-danger">Delete Order</Button>{' '}
-                                <Button variant="outline-primary">Place Order</Button>{' '}
+                                <Button onClick={() => handelPlaceOrder(booking._id)} variant="outline-primary">Place Order</Button>{' '}
                             </div>
                         </div>
                     )

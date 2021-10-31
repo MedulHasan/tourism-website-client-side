@@ -2,9 +2,12 @@
     text-align: left;
     padding: 2%;
     background-color: #212529;
-    width: 20%;
+    width: 25%;
     height: 100vh;
-    position: fixed;
+    /* position: fixed; */
+    position: -webkit-sticky;
+    position: sticky;
+    top: 50px;
 }
 .navBar-item {
     /* color: #fff !important; */
